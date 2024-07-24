@@ -5,9 +5,6 @@ library(comprehenr)
 # TODO: Specify actual path
 exp_path <- temporary_folder()
 
-# specify num of trials
-num_trial <- 10
-
 # get images and audio from resource folder
 resource_folder <- "resources"
 resources <- list.files(resource_folder)
@@ -114,11 +111,94 @@ audio_trial5 <- trial_audio_button_response(
   post_trial_gap = 1000
 )
 
+# trial 6
+random_html_images <- sample(html_images)
+random_audio <- sample(audios, 1)
+
+audio_trial6 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("1", "2", "3", "4", "5"),
+  button_html = random_html_images,
+  margin_horizontal = 150,
+  prompt = "Who said this sentence?",
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000
+)
+
+# trial 7
+random_html_images <- sample(html_images)
+random_audio <- sample(audios, 1)
+
+audio_trial7 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("1", "2", "3", "4", "5"),
+  button_html = random_html_images,
+  margin_horizontal = 150,
+  prompt = "Who said this sentence?",
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000
+)
+
+# trial 8
+random_html_images <- sample(html_images)
+random_audio <- sample(audios, 1)
+
+audio_trial8 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("1", "2", "3", "4", "5"),
+  button_html = random_html_images,
+  margin_horizontal = 150,
+  prompt = "Who said this sentence?",
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000
+)
+
+# trial 9
+random_html_images <- sample(html_images)
+random_audio <- sample(audios, 1)
+
+audio_trial9 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("1", "2", "3", "4", "5"),
+  button_html = random_html_images,
+  margin_horizontal = 150,
+  prompt = "Who said this sentence?",
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000
+)
+
+# trial 10
+random_html_images <- sample(html_images)
+random_audio <- sample(audios, 1)
+
+audio_trial10 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("1", "2", "3", "4", "5"),
+  button_html = random_html_images,
+  margin_horizontal = 150,
+  prompt = "Who said this sentence?",
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000
+)
+
 # (2) Experiment: Begin all questions and randomize, repeat 10x
-trials <- build_timeline(audio_trial1, audio_trial2, audio_trial3, audio_trial4, audio_trial5) %>%
+part1 <- build_timeline(audio_trial1, audio_trial2, audio_trial3, audio_trial4, 
+                        audio_trial5, audio_trial6, audio_trial7, audio_trial8,
+                        audio_trial9, audio_trial10) %>%
   set_parameters(randomize_order = TRUE)
 
-# (3) Finish screen
+# (3) Social preferences, images + 4 questions
+
+
+# (4) Yes/no questions, audio + question w/branching
+
+
+# (5) Finish screen
 finish <- trial_html_keyboard_response(
   stimulus = "All done! Press any key to finish",
   choices = respond_any_key()
@@ -126,7 +206,7 @@ finish <- trial_html_keyboard_response(
 
 # build final experiment
 build_experiment(
-  timeline = build_timeline(instructions, trials, finish),
+  timeline = build_timeline(instructions, part1, finish),
   path = exp_path,
   resources = build_resources(resource_folder),
   use_webaudio = TRUE,
