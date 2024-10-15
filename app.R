@@ -153,7 +153,6 @@ audio_response6 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
