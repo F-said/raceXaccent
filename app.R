@@ -24,6 +24,12 @@ audios <- audios[audios != "blank.mp3"]
 
 # (1) Intro : Instructions to experimentee
 # Credit to ChatGPT for this workaround
+blank_page <- trial_instructions(
+  pages = c(""),
+  show_clickable_nav = TRUE,
+  post_trial_gap = 1000
+)
+
 instruction_text <- c(
   "<p>Here are some of my friends. They are going to say some things about themselves.\
   Let's listen to the first one.</p>"
@@ -43,17 +49,10 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 # TODO: combine both trial and response (stimulus delay)
-audio_trial1 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
-)
 audio_response1 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who do you think said this?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -64,16 +63,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial2 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("Next️"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response2 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who do you think said this?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -84,16 +83,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial3 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("Next️️"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response3 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -104,16 +103,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial4 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("️Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response4 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -124,16 +123,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial5 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("️Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response5 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -144,14 +143,14 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial6 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  response_ends_trial = FALSE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("️Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response6 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
   prompt = "Who said this sentence?",
@@ -165,16 +164,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial7 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("️Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response7 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -185,16 +184,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial8 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("️Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response8 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -205,16 +204,16 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial9 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
-  post_trial_gap = 1000
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("️Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 500
 )
 audio_response9 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
@@ -225,23 +224,23 @@ random_html_images <- sample(html_images)
 random_audio <- sample(audios, 1)
 
 audio_trial10 <- trial_audio_button_response(
-  stimulus = insert_resource(random_audio),
-  choices = c("📣️"),
-  trial_ends_after_audio = TRUE,
+  stimulus = insert_resource('blank.mp3'),
+  choices = c("Next"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
   post_trial_gap = 1000
 )
 audio_response10 <- trial_audio_button_response(
-  stimulus = insert_resource('blank.mp3'),
+  stimulus = insert_resource(random_audio),
   choices = c("1", "2", "3", "4", "5"),
   button_html = random_html_images,
-  prompt = "Who said this sentence?",
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000
 )
 
 # Experiment: Begin all questions and randomize, repeat 10x
-part1 <- build_timeline(audio_trial1, audio_response1, audio_trial2, audio_response2,
+part1 <- build_timeline(audio_response1, audio_trial2, audio_response2,
                         audio_trial3, audio_response3, audio_trial4, audio_response4,
                         audio_trial5, audio_response5, audio_trial6, audio_response6,
                         audio_trial7, audio_response7, audio_trial8, audio_response8,
@@ -306,7 +305,7 @@ finish <- trial_html_keyboard_response(
 
 # build final experiment
 build_experiment(
-  timeline = build_timeline(instructions1, part1, instructions2, part2, finish),
+  timeline = build_timeline(blank_page, instructions1, part1, instructions2, part2, finish),
   path = exp_path,
   resources = build_resources(resource_folder),
   use_webaudio = TRUE,
