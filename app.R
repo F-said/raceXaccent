@@ -22,6 +22,19 @@ html_images <- to_vec(
 audios <- resources[grepl(".mp3$", resources)]
 audios <- audios[audios != "blank.mp3"]
 
+# get part 1 audios
+part1_audios <- audios[grepl("^Tiger_", audios) |
+                     grepl("^Orange_", audios) |
+                     grepl("^Volleyball_", audios) |
+                     grepl("^Sibling_", audios) |
+                     grepl("^Dog_", audios) |
+                     grepl("^Cat_", audios) |
+                     grepl("^Icecream_", audios) |
+                     grepl("^Music_", audios) |
+                     grepl("^Movies_", audios) |
+                     grepl("^Park_", audios)
+                    ]
+
 # (1) Intro : Instructions to experimentee
 # Credit to ChatGPT for this workaround
 blank_page <- trial_instructions(
@@ -46,15 +59,14 @@ instructions1 <- trial_instructions(
 # trial 1
 random_html_images <- sample(html_images)
 # iterate through each speaker, removing speakers and phrases from list
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 # extract phrase
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 # extract speaker
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
 # filter out these phrases and speakers
-non_audios <- audios[grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios)]
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 # TODO: combine both trial and response (stimulus delay)
 audio_response1 <- trial_audio_button_response(
@@ -68,11 +80,11 @@ audio_response1 <- trial_audio_button_response(
 
 # trial 2
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 
 audio_trial2 <- trial_audio_button_response(
@@ -93,11 +105,11 @@ audio_response2 <- trial_audio_button_response(
 
 # trial 3
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial3 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -117,11 +129,11 @@ audio_response3 <- trial_audio_button_response(
 
 # trial 4
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial4 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -141,11 +153,11 @@ audio_response4 <- trial_audio_button_response(
 
 # trial 5
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial5 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -165,11 +177,11 @@ audio_response5 <- trial_audio_button_response(
 
 # trial 6
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial6 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -189,11 +201,11 @@ audio_response6 <- trial_audio_button_response(
 
 # trial 7
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial7 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -213,11 +225,11 @@ audio_response7 <- trial_audio_button_response(
 
 # trial 8
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial8 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -237,11 +249,11 @@ audio_response8 <- trial_audio_button_response(
 
 # trial 9
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial9 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -261,11 +273,11 @@ audio_response9 <- trial_audio_button_response(
 
 # trial 10
 random_html_images <- sample(html_images)
-random_audio <- sample(audios, 1)
+random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
 
-audios <- audios[!(grepl(paste0("^", phrase, "_"), audios) | grepl(paste0("_", speaker, "_"), audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
 audio_trial10 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
