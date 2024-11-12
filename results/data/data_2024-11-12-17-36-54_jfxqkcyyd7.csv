@@ -1,0 +1,29 @@
+file_id,view_history,rt,trial_type,trial_index,time_elapsed,internal_node_id,responses,stimulus,button_pressed,image,key_press
+data_2024-11-12-17-36-54_jfxqkcyyd7,"[{""page_index"":0,""viewing_time"":878.3999999761581}]",878.5999999642372,instructions,0,880,0.0-0.0-0.0,NA,NA,NA,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,2591.300000011921,survey-text,1,4476,0.0-0.0-1.0-0.0,"{""Participant ID"":""100""}",NA,NA,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,"[{""page_index"":0,""viewing_time"":1529.300000011921}]",1529.4000000357628,instructions,2,6005,0.0-0.0-2.0,NA,NA,NA,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,339.89999997615814,audio-button-response,3,7352,0.0-0.0-3.0-0.0,NA,resource/audio/Icecream_speaker3HU.mp3,2,"White Woman,Latina Woman,Middle Eastern Woman,Black Woman,Asian Woman",NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,500.5,audio-button-response,4,8853,0.0-0.0-3.0-1.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,504.5999999642372,audio-button-response,5,9859,0.0-0.0-3.0-2.0,NA,resource/audio/Movies_speaker5US.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,697.5,audio-button-response,6,11558,0.0-0.0-3.0-3.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,560.8000000119209,audio-button-response,7,12623,0.0-0.0-3.0-4.0,NA,resource/audio/Sibling_speaker1US.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,457.199999988079,audio-button-response,8,14087,0.0-0.0-3.0-5.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,461.199999988079,audio-button-response,9,15064,0.0-0.0-3.0-6.0,NA,resource/audio/Park_speaker1US.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,534.5,audio-button-response,10,16611,0.0-0.0-3.0-7.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,426.4000000357628,audio-button-response,11,17539,0.0-0.0-3.0-8.0,NA,resource/audio/Music_speaker1HU.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,430.300000011921,audio-button-response,12,18971,0.0-0.0-3.0-9.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,582.8999999761581,audio-button-response,13,20056,0.0-0.0-3.0-10.0,NA,resource/audio/Cat_speaker5US.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,487.5,audio-button-response,14,21552,0.0-0.0-3.0-11.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,601.0999999642372,audio-button-response,15,22654,0.0-0.0-3.0-12.0,NA,resource/audio/Volleyball_speaker4HU.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,538.8999999761581,audio-button-response,16,24200,0.0-0.0-3.0-13.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,594.6000000238419,audio-button-response,17,25303,0.0-0.0-3.0-14.0,NA,resource/audio/Tiger_speaker5HU.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,1904.100000023842,audio-button-response,18,28209,0.0-0.0-3.0-15.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,498.2000000476837,audio-button-response,19,29216,0.0-0.0-3.0-16.0,NA,resource/audio/Dog_speaker4US.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,409.39999997615814,audio-button-response,20,30632,0.0-0.0-3.0-17.0,NA,resource/audio/blank.mp3,0,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,453.800000011921,audio-button-response,21,32092,0.0-0.0-3.0-18.0,NA,resource/audio/Orange_speaker5US.mp3,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,"[{""page_index"":0,""viewing_time"":531.4000000357628}]",531.5,instructions,22,33631,0.0-0.0-4.0,NA,NA,NA,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,387.2999999523163,html-button-response,23,35030,0.0-0.0-5.0-0.0,NA,Who do you like the most?,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,361.89999997615814,html-button-response,24,36406,0.0-0.0-5.0-1.0,NA,Who is the friendliest?,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,343.60000002384186,html-button-response,25,37759,0.0-0.0-5.0-2.0,NA,Who is the smartest?,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,300.30000001192093,html-button-response,26,39068,0.0-0.0-5.0-3.0,NA,Who do you trust the most?,2,NA,NA
+data_2024-11-12-17-36-54_jfxqkcyyd7,NA,1028.600000023842,html-keyboard-response,27,41099,0.0-0.0-6.0,NA,All done! Press any key to finish,NA,NA,32

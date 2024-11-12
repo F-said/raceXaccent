@@ -43,6 +43,19 @@ blank_page <- trial_instructions(
   post_trial_gap = 1000
 )
 
+# ask for ID number
+id_quest <- trial_survey_text(
+  questions = question_text(
+    prompt = "Participant ID",
+    placeholder = "#",
+    required = TRUE,
+    name = "Participant ID"
+  ),
+  button_label = "Next"
+)
+
+id_part <- build_timeline(id_quest)
+
 instruction_text <- c(
   "<p></p>"
 )
@@ -57,6 +70,9 @@ instructions1 <- trial_instructions(
 # Audio trial with image response buttons
 # trial 1
 random_html_images <- sample(html_images)
+# encode choices by image name
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 # iterate through each speaker, removing speakers and phrases from list
 random_audio <- sample(part1_audios, 1)
 # extract phrase
@@ -67,18 +83,20 @@ speaker <- strsplit(random_audio, split="_")[[1]][2]
 # filter out these phrases and speakers
 part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
 
-# TODO: combine both trial and response (stimulus delay)
 audio_response1 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 2
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -95,15 +113,18 @@ audio_trial2 <- trial_audio_button_response(
 )
 audio_response2 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 3
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -119,15 +140,18 @@ audio_trial3 <- trial_audio_button_response(
 )
 audio_response3 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 4
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -143,15 +167,18 @@ audio_trial4 <- trial_audio_button_response(
 )
 audio_response4 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 5
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -167,15 +194,18 @@ audio_trial5 <- trial_audio_button_response(
 )
 audio_response5 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 6
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -191,15 +221,18 @@ audio_trial6 <- trial_audio_button_response(
 )
 audio_response6 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 7
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -215,15 +248,18 @@ audio_trial7 <- trial_audio_button_response(
 )
 audio_response7 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 8
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -239,15 +275,18 @@ audio_trial8 <- trial_audio_button_response(
 )
 audio_response8 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 9
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -263,15 +302,18 @@ audio_trial9 <- trial_audio_button_response(
 )
 audio_response9 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # trial 10
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 speaker <- strsplit(random_audio, split="_")[[1]][2]
@@ -287,11 +329,12 @@ audio_trial10 <- trial_audio_button_response(
 )
 audio_response10 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # Experiment: Begin all questions and randomize, repeat 10x
@@ -311,38 +354,50 @@ instructions2 <- trial_instructions(
 
 # Question 1
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 question1 <- trial_html_button_response(
   stimulus = "Who do you like the most?",
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # Question 2
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 question2 <- trial_html_button_response(
   stimulus = "Who is the friendliest?",
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # Question 3
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 question3 <- trial_html_button_response(
   stimulus = "Who is the smartest?",
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 # Question 4
 random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
 question4 <- trial_html_button_response(
   stimulus = "Who do you trust the most?",
-  choices = c("1", "2", "3", "4", "5"),
+  choices = pictures,
   button_html = random_html_images,
-  post_trial_gap = 1000
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
 )
 
 part2 <- build_timeline(question1, question2, question3, question4) %>%
@@ -354,13 +409,13 @@ part2 <- build_timeline(question1, question2, question3, question4) %>%
 
 # (4) Finish screen
 finish <- trial_html_keyboard_response(
-  stimulus = "All done! Press any key to finish",
+  stimulus = "All done! Press the space button before exiting this window!",
   choices = respond_any_key()
 )
 
 # build final experiment
 build_experiment(
-  timeline = build_timeline(blank_page, instructions1, part1, instructions2, part2, finish),
+  timeline = build_timeline(blank_page, id_part, instructions1, part1, instructions2, part2, finish),
   path = exp_path,
   resources = build_resources(resource_folder),
   use_webaudio = TRUE,
@@ -369,4 +424,5 @@ build_experiment(
 
 # and run...
 run_locally(exp_path)
+
 

@@ -1,0 +1,29 @@
+file_id,view_history,rt,trial_type,trial_index,time_elapsed,internal_node_id,responses,0,stimulus,button_pressed,key_press
+data_2024-11-12-17-18-49_m16yj5dtu4,"[{""page_index"":0,""viewing_time"":1014.8999999761581}]",1015.3000000119208,instructions,0,1016,0.0-0.0-0.0,NA,NA,NA,NA,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,35937.200000047684,survey-text,1,37967,0.0-0.0-1.0-0.0,"{""undefined"":""100\n""}",NA,NA,NA,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,"[{""page_index"":0,""viewing_time"":1216.300000011921}]",1216.5,instructions,2,39184,0.0-0.0-2.0,NA,NA,NA,NA,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,437.199999988079,audio-button-response,3,40629,0.0-0.0-3.0-0.0,NA,hello,resource/audio/Dog_speaker2HU.mp3,2,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,904.5,audio-button-response,4,42542,0.0-0.0-3.0-1.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,20666.69999998808,audio-button-response,5,63711,0.0-0.0-3.0-2.0,NA,NA,resource/audio/Movies_speaker1HU.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,4891.600000023842,audio-button-response,6,69605,0.0-0.0-3.0-3.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,948.2999999523164,audio-button-response,7,71057,0.0-0.0-3.0-4.0,NA,NA,resource/audio/Orange_speaker1HU.mp3,2,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,1447.600000023842,audio-button-response,8,73519,0.0-0.0-3.0-5.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,6297,audio-button-response,9,80321,0.0-0.0-3.0-6.0,NA,NA,resource/audio/Music_speaker3HU.mp3,2,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,3826.199999988079,audio-button-response,10,85151,0.0-0.0-3.0-7.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,552.5999999642372,audio-button-response,11,86215,0.0-0.0-3.0-8.0,NA,NA,resource/audio/Sibling_speaker4HU.mp3,2,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,811.3999999761581,audio-button-response,12,88042,0.0-0.0-3.0-9.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,413.39999997615814,audio-button-response,13,88967,0.0-0.0-3.0-10.0,NA,NA,resource/audio/Cat_speaker3HU.mp3,4,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,432.699999988079,audio-button-response,14,90407,0.0-0.0-3.0-11.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,679.6999999880791,audio-button-response,15,91592,0.0-0.0-3.0-12.0,NA,NA,resource/audio/Park_speaker5HU.mp3,4,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,845.5999999642372,audio-button-response,16,93446,0.0-0.0-3.0-13.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,332.60000002384186,audio-button-response,17,94293,0.0-0.0-3.0-14.0,NA,NA,resource/audio/Volleyball_speaker1HU.mp3,3,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,60100.19999998808,audio-button-response,18,155399,0.0-0.0-3.0-15.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,472.199999988079,audio-button-response,19,156376,0.0-0.0-3.0-16.0,NA,NA,resource/audio/Icecream_speaker5HU.mp3,2,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,428.699999988079,audio-button-response,20,157817,0.0-0.0-3.0-17.0,NA,NA,resource/audio/blank.mp3,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,68154.69999998808,audio-button-response,21,226977,0.0-0.0-3.0-18.0,NA,NA,resource/audio/Tiger_speaker3HU.mp3,4,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,"[{""page_index"":0,""viewing_time"":1000.3000000119209}]",1000.5,instructions,22,228984,0.0-0.0-4.0,NA,NA,NA,NA,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,455.699999988079,html-button-response,23,230441,0.0-0.0-5.0-0.0,NA,NA,Who do you like the most?,0,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,343.5999999642372,html-button-response,24,231792,0.0-0.0-5.0-1.0,NA,NA,Who is the friendliest?,2,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,933.100000023842,html-button-response,25,233734,0.0-0.0-5.0-2.0,NA,NA,Who is the smartest?,4,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,288.5,html-button-response,26,235024,0.0-0.0-5.0-3.0,NA,NA,Who do you trust the most?,3,NA
+data_2024-11-12-17-18-49_m16yj5dtu4,NA,1006.8000000119208,html-keyboard-response,27,237036,0.0-0.0-6.0,NA,NA,All done! Press any key to finish,NA,32
