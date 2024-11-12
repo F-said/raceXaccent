@@ -44,8 +44,7 @@ blank_page <- trial_instructions(
 )
 
 instruction_text <- c(
-  "<p>Here are some of my friends. They are going to say some things about themselves.\
-  Let's listen to the first one.</p>"
+  "<p></p>"
 )
 instructions_with_images <- paste(paste(html_images, collapse = ""), instruction_text, 
                                   sep = "\n")
