@@ -3,7 +3,7 @@ library(comprehenr)
 
 # a temporary path to hold experiment & data 
 # TODO: Specify actual path
-exp_path <- temporary_folder()
+exp_path <- "results"
 
 # get images and audio from resource folder
 resource_folder <- "resources"
@@ -78,10 +78,10 @@ random_audio <- sample(part1_audios, 1)
 # extract phrase
 phrase <- strsplit(random_audio, split="_")[[1]][1]
 # extract speaker
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
 # filter out these phrases and speakers
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_response1 <- trial_audio_button_response(
   stimulus = insert_resource(random_audio),
@@ -90,7 +90,7 @@ audio_response1 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 2
@@ -99,9 +99,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 
 audio_trial2 <- trial_audio_button_response(
@@ -118,7 +118,7 @@ audio_response2 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 3
@@ -127,9 +127,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial3 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -145,7 +145,7 @@ audio_response3 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 4
@@ -154,9 +154,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial4 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -172,7 +172,7 @@ audio_response4 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 5
@@ -181,9 +181,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial5 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -199,7 +199,7 @@ audio_response5 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 6
@@ -208,9 +208,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial6 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -226,7 +226,7 @@ audio_response6 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 7
@@ -235,9 +235,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial7 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -253,7 +253,7 @@ audio_response7 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 8
@@ -262,9 +262,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial8 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -280,7 +280,7 @@ audio_response8 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 9
@@ -289,9 +289,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial9 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -307,7 +307,7 @@ audio_response9 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # trial 10
@@ -316,9 +316,9 @@ pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/(
 
 random_audio <- sample(part1_audios, 1)
 phrase <- strsplit(random_audio, split="_")[[1]][1]
-speaker <- strsplit(random_audio, split="_")[[1]][2]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
-part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, "_"), part1_audios))]
+part1_audios <- part1_audios[!(grepl(paste0("^", phrase, "_"), part1_audios) | grepl(paste0("_", speaker, ".mp3"), part1_audios))]
 
 audio_trial10 <- trial_audio_button_response(
   stimulus = insert_resource('blank.mp3'),
@@ -334,7 +334,7 @@ audio_response10 <- trial_audio_button_response(
   trial_ends_after_audio = FALSE,
   response_ends_trial = TRUE,
   post_trial_gap = 1000,
-  data = insert_property(image = pictures)
+  data = insert_property(image = pictures, speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
 )
 
 # Experiment: Begin all questions and randomize, repeat 10x

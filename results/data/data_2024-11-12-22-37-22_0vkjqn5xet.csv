@@ -1,0 +1,29 @@
+file_id,view_history,rt,trial_type,trial_index,time_elapsed,internal_node_id,responses,stimulus,button_pressed,image,speaker,subject,accent,key_press
+data_2024-11-12-22-37-22_0vkjqn5xet,"[{""page_index"":0,""viewing_time"":1615.800000011921}]",1616.199999988079,instructions,0,1618,0.0-0.0-0.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,3239,survey-text,1,5866,0.0-0.0-1.0-0.0,"{""Participant ID"":""test""}",NA,NA,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,"[{""page_index"":0,""viewing_time"":1565}]",1565.199999988079,instructions,2,7432,0.0-0.0-2.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,392.89999997615814,audio-button-response,3,8830,0.0-0.0-3.0-0.0,NA,resource/audio/Volleyball_speaker3US.mp3,2,"Latina Woman,Asian Woman,Black Woman,Middle Eastern Woman,White Woman",speaker3US,Volleyball,US,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,1652.2000000476835,audio-button-response,4,11485,0.0-0.0-3.0-1.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,171.60000002384186,audio-button-response,5,12159,0.0-0.0-3.0-2.0,NA,resource/audio/Tiger_speaker2HU.mp3,2,"Black Woman,White Woman,Latina Woman,Middle Eastern Woman,Asian Woman",speaker2HU,Tiger,HU,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,691.6999999880791,audio-button-response,6,13852,0.0-0.0-3.0-3.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,451.4000000357628,audio-button-response,7,14808,0.0-0.0-3.0-4.0,NA,resource/audio/Sibling_speaker5US.mp3,2,"Middle Eastern Woman,Latina Woman,Black Woman,Asian Woman,White Woman",speaker5US,Sibling,US,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,976.100000023842,audio-button-response,8,16786,0.0-0.0-3.0-5.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,378.5,audio-button-response,9,17673,0.0-0.0-3.0-6.0,NA,resource/audio/Movies_speaker4US.mp3,2,"Middle Eastern Woman,White Woman,Black Woman,Latina Woman,Asian Woman",speaker4US,Movies,US,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,612.3000000119209,audio-button-response,10,19291,0.0-0.0-3.0-7.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,347.5,audio-button-response,11,20148,0.0-0.0-3.0-8.0,NA,resource/audio/Icecream_speaker1US.mp3,2,"White Woman,Asian Woman,Middle Eastern Woman,Latina Woman,Black Woman",speaker1US,Icecream,US,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,356.80000001192093,audio-button-response,12,21511,0.0-0.0-3.0-9.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,1095.0999999642372,audio-button-response,13,23123,0.0-0.0-3.0-10.0,NA,resource/audio/Park_speaker4HU.mp3,1,"Middle Eastern Woman,White Woman,Asian Woman,Black Woman,Latina Woman",speaker4HU,Park,HU,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,280.5,audio-button-response,14,24405,0.0-0.0-3.0-11.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,411.89999997615814,audio-button-response,15,25324,0.0-0.0-3.0-12.0,NA,resource/audio/Orange_speaker2US.mp3,2,"White Woman,Middle Eastern Woman,Asian Woman,Latina Woman,Black Woman",speaker2US,Orange,US,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,2087.399999976158,audio-button-response,16,28417,0.0-0.0-3.0-13.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,129.29999995231628,audio-button-response,17,29055,0.0-0.0-3.0-14.0,NA,resource/audio/Dog_speaker1HU.mp3,2,"Black Woman,Latina Woman,White Woman,Asian Woman,Middle Eastern Woman",speaker1HU,Dog,HU,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,656.6999999880791,audio-button-response,18,30714,0.0-0.0-3.0-15.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,441.699999988079,audio-button-response,19,31668,0.0-0.0-3.0-16.0,NA,resource/audio/Music_speaker5HU.mp3,2,"Black Woman,White Woman,Middle Eastern Woman,Latina Woman,Asian Woman",speaker5HU,Music,HU,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,490.4000000357628,audio-button-response,20,33171,0.0-0.0-3.0-17.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,384.699999988079,audio-button-response,21,34560,0.0-0.0-3.0-18.0,NA,resource/audio/Cat_speaker3HU.mp3,2,"Asian Woman,Latina Woman,White Woman,Black Woman,Middle Eastern Woman",speaker3HU,Cat,HU,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,"[{""page_index"":0,""viewing_time"":993.7999999523163}]",994,instructions,22,36555,0.0-0.0-4.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,389.39999997615814,html-button-response,23,37960,0.0-0.0-5.0-0.0,NA,Who do you like the most?,2,"Latina Woman,Middle Eastern Woman,White Woman,Asian Woman,Black Woman",NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,654.1000000238419,html-button-response,24,39625,0.0-0.0-5.0-1.0,NA,Who is the friendliest?,2,"White Woman,Latina Woman,Middle Eastern Woman,Black Woman,Asian Woman",NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,397.300000011921,html-button-response,25,41029,0.0-0.0-5.0-2.0,NA,Who is the smartest?,2,"White Woman,Asian Woman,Latina Woman,Black Woman,Middle Eastern Woman",NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,427,html-button-response,26,42469,0.0-0.0-5.0-3.0,NA,Who do you trust the most?,2,"Latina Woman,Black Woman,Asian Woman,White Woman,Middle Eastern Woman",NA,NA,NA,NA
+data_2024-11-12-22-37-22_0vkjqn5xet,NA,1146.800000011921,html-keyboard-response,27,44628,0.0-0.0-6.0,NA,All done! Press the space button before exiting this window!,NA,NA,NA,NA,NA,32
