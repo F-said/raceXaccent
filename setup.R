@@ -6,3 +6,4 @@ install.packages("remotes")
 install.packages("comprehenr")
 
 remotes::install_github("djnavarro/jaysire")
+
