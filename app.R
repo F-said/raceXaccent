@@ -35,7 +35,7 @@ part1_audios <- audios[grepl("^Tiger_", audios) |
                      grepl("^Park_", audios)
                     ]
 
-# (1) Intro : Instructions to experimentee
+# (0) Intro : Instructions to experimentee
 # Credit to ChatGPT for this workaround
 blank_page <- trial_instructions(
   pages = c(""),
@@ -67,6 +67,7 @@ instructions1 <- trial_instructions(
   post_trial_gap = 1000
 )
 
+# (1) Part 1: Questions & Images
 # Audio trial with image response buttons
 # trial 1
 random_html_images <- sample(html_images)
@@ -357,7 +358,7 @@ random_html_images <- sample(html_images)
 pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
 
 question1 <- trial_html_button_response(
-  stimulus = "Who do you like the most?",
+  stimulus = "",
   choices = pictures,
   button_html = random_html_images,
   post_trial_gap = 1000,
@@ -369,7 +370,7 @@ random_html_images <- sample(html_images)
 pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
 
 question2 <- trial_html_button_response(
-  stimulus = "Who is the friendliest?",
+  stimulus = "",
   choices = pictures,
   button_html = random_html_images,
   post_trial_gap = 1000,
@@ -381,7 +382,7 @@ random_html_images <- sample(html_images)
 pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
 
 question3 <- trial_html_button_response(
-  stimulus = "Who is the smartest?",
+  stimulus = "",
   choices = pictures,
   button_html = random_html_images,
   post_trial_gap = 1000,
@@ -393,14 +394,26 @@ random_html_images <- sample(html_images)
 pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
 
 question4 <- trial_html_button_response(
-  stimulus = "Who do you trust the most?",
+  stimulus = "",
   choices = pictures,
   button_html = random_html_images,
   post_trial_gap = 1000,
   data = insert_property(image = pictures)
 )
 
-part2 <- build_timeline(question1, question2, question3, question4) %>%
+# Question 5
+random_html_images <- sample(html_images)
+pictures <- stringr::str_match(random_html_images, '^<img src=\"resource/image/([a-zA-Z ]*)')[,2]
+
+question5 <- trial_html_button_response(
+  stimulus = "",
+  choices = pictures,
+  button_html = random_html_images,
+  post_trial_gap = 1000,
+  data = insert_property(image = pictures)
+)
+
+part2 <- build_timeline(question1, question2, question3, question4, question5) %>%
   set_parameters(randomize_order = TRUE)
 
 # (3) Yes/no questions, audio + question w/branching
