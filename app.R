@@ -35,6 +35,9 @@ part1_audios <- audios[grepl("^Tiger_", audios) |
                      grepl("^Park_", audios)
                     ]
 
+# get part 2 audios
+part2_audios <- audios[grepl("^SeaTurtleEggs_speaker1", audios) | grepl("^SeaTurtles_speaker1", audios)]
+
 # (0) Intro : Instructions to experimentee
 # Credit to ChatGPT for this workaround
 blank_page <- trial_instructions(
@@ -417,8 +420,45 @@ part2 <- build_timeline(question1, question2, question3, question4, question5) %
   set_parameters(randomize_order = TRUE)
 
 # (3) Yes/no questions, audio + question w/branching
+instructions3 <- trial_instructions(
+  pages = c("Part 3"),
+  show_clickable_nav = TRUE,
+  post_trial_gap = 1000
+)
 
+# trial 1
+random_audio <- sample(part2_audios, 1)
+phrase <- strsplit(random_audio, split="_")[[1]][1]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
 
+part2_audios <- part2_audios[!(grepl(paste0("^", phrase, "_"), part2_audios) | grepl(paste0("_", speaker, ".mp3"), part2_audios))]
+
+audio_response1 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("Next️"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000,
+  data = insert_property(speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
+)
+
+# trial 2
+random_audio <- sample(part2_audios, 1)
+phrase <- strsplit(random_audio, split="_")[[1]][1]
+speaker <- strsplit(strsplit(random_audio, split="_")[[1]][2], split="\\.")[[1]][1]
+
+part2_audios <- part2_audios[!(grepl(paste0("^", phrase, "_"), part2_audios) | grepl(paste0("_", speaker, ".mp3"), part2_audios))]
+
+audio_response2 <- trial_audio_button_response(
+  stimulus = insert_resource(random_audio),
+  choices = c("Next️"),
+  trial_ends_after_audio = FALSE,
+  response_ends_trial = TRUE,
+  post_trial_gap = 1000,
+  data = insert_property(speaker = speaker, subject = phrase, accent = stringr::str_sub(speaker, start= -2))
+)
+
+part3 <- build_timeline(audio_response1, audio_response2) %>% set_parameters(randomize_order = TRUE)
 
 # (4) Finish screen
 finish <- trial_html_keyboard_response(
@@ -428,7 +468,7 @@ finish <- trial_html_keyboard_response(
 
 # build final experiment
 build_experiment(
-  timeline = build_timeline(blank_page, id_part, instructions1, part1, instructions2, part2, finish),
+  timeline = build_timeline(blank_page, id_part, instructions1, part1, instructions2, part2, instructions3, part3, finish),
   path = exp_path,
   resources = build_resources(resource_folder),
   use_webaudio = TRUE,

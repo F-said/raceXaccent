@@ -1,0 +1,33 @@
+file_id,view_history,rt,trial_type,trial_index,time_elapsed,internal_node_id,responses,stimulus,button_pressed,image,speaker,subject,accent,key_press
+data_2025-02-18-22-50-13_twdoi4z3r6,"[{""page_index"":0,""viewing_time"":78510.90000000596}]",78511.20000000298,instructions,0,78513,0.0-0.0-0.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,2486.10000000149,survey-text,1,82008,0.0-0.0-1.0-0.0,"{""Participant ID"":""test""}",NA,NA,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,"[{""page_index"":0,""viewing_time"":815.7999999970198}]",815.8999999985099,instructions,2,82824,0.0-0.0-2.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,225,audio-button-response,3,84060,0.0-0.0-3.0-0.0,NA,resource/audio/Park_speaker1HU.mp3,2,"White Woman,Latina Woman,Middle Eastern Woman,Asian Woman,Black Woman",speaker1HU,Park,HU,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,535.5,audio-button-response,4,85604,0.0-0.0-3.0-1.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,295.5,audio-button-response,5,86415,0.0-0.0-3.0-2.0,NA,resource/audio/Music_speaker5US.mp3,2,"Middle Eastern Woman,Latina Woman,Asian Woman,White Woman,Black Woman",speaker5US,Music,US,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,528.1000000014901,audio-button-response,6,87945,0.0-0.0-3.0-3.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,454.6000000014901,audio-button-response,7,88902,0.0-0.0-3.0-4.0,NA,resource/audio/Orange_speaker5HU.mp3,2,"Latina Woman,White Woman,Asian Woman,Black Woman,Middle Eastern Woman",speaker5HU,Orange,HU,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,494.69999999552965,audio-button-response,8,90408,0.0-0.0-3.0-5.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,467.29999999701977,audio-button-response,9,91378,0.0-0.0-3.0-6.0,NA,resource/audio/Dog_speaker3US.mp3,2,"Asian Woman,Black Woman,Latina Woman,Middle Eastern Woman,White Woman",speaker3US,Dog,US,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,548,audio-button-response,10,92929,0.0-0.0-3.0-7.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,440.40000000596046,audio-button-response,11,93878,0.0-0.0-3.0-8.0,NA,resource/audio/Movies_speaker4HU.mp3,2,"White Woman,Latina Woman,Asian Woman,Middle Eastern Woman,Black Woman",speaker4HU,Movies,HU,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,729.5999999940395,audio-button-response,12,95609,0.0-0.0-3.0-9.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,472.79999999701977,audio-button-response,13,96587,0.0-0.0-3.0-10.0,NA,resource/audio/Cat_speaker1US.mp3,2,"Asian Woman,Middle Eastern Woman,Black Woman,White Woman,Latina Woman",speaker1US,Cat,US,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,452.6000000014901,audio-button-response,14,98040,0.0-0.0-3.0-11.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,364.59999999403954,audio-button-response,15,98912,0.0-0.0-3.0-12.0,NA,resource/audio/Sibling_speaker3HU.mp3,2,"Asian Woman,Black Woman,Middle Eastern Woman,Latina Woman,White Woman",speaker3HU,Sibling,HU,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,1067.10000000149,audio-button-response,16,100981,0.0-0.0-3.0-13.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,306.3999999985099,audio-button-response,17,101791,0.0-0.0-3.0-14.0,NA,resource/audio/Icecream_speaker2HU.mp3,2,"Asian Woman,White Woman,Latina Woman,Black Woman,Middle Eastern Woman",speaker2HU,Icecream,HU,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,558.8999999985099,audio-button-response,18,103351,0.0-0.0-3.0-15.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,258.29999999701977,audio-button-response,19,104111,0.0-0.0-3.0-16.0,NA,resource/audio/Tiger_speaker4US.mp3,2,"White Woman,Middle Eastern Woman,Latina Woman,Asian Woman,Black Woman",speaker4US,Tiger,US,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,312.6000000014901,audio-button-response,20,105439,0.0-0.0-3.0-17.0,NA,resource/audio/blank.mp3,0,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,332.80000000447035,audio-button-response,21,106773,0.0-0.0-3.0-18.0,NA,resource/audio/Volleyball_speaker2US.mp3,2,"Black Woman,Latina Woman,Asian Woman,White Woman,Middle Eastern Woman",speaker2US,Volleyball,US,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,"[{""page_index"":0,""viewing_time"":655.9000000059605}]",656,instructions,22,108433,0.0-0.0-4.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,343.5,html-button-response,23,109783,0.0-0.0-5.0-0.0,NA,NA,2,"Asian Woman,Black Woman,White Woman,Latina Woman,Middle Eastern Woman",NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,498.3999999985099,html-button-response,24,111289,0.0-0.0-5.0-1.0,NA,NA,2,"White Woman,Black Woman,Latina Woman,Asian Woman,Middle Eastern Woman",NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,437.8999999985099,html-button-response,25,112729,0.0-0.0-5.0-2.0,NA,NA,2,"Black Woman,Middle Eastern Woman,White Woman,Asian Woman,Latina Woman",NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,438.59999999403954,html-button-response,26,114169,0.0-0.0-5.0-3.0,NA,NA,2,"Asian Woman,Black Woman,Middle Eastern Woman,White Woman,Latina Woman",NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,733.3000000044703,html-button-response,27,115908,0.0-0.0-5.0-4.0,NA,NA,2,"White Woman,Asian Woman,Middle Eastern Woman,Latina Woman,Black Woman",NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,"[{""page_index"":0,""viewing_time"":989.1999999955297}]",989.39999999851,instructions,28,117902,0.0-0.0-6.0,NA,NA,NA,NA,NA,NA,NA,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,1363.1999999955297,audio-button-response,29,120272,0.0-0.0-7.0-0.0,NA,resource/audio/SeaTurtleEggs_speaker1HU.mp3,0,NA,speaker1HU,SeaTurtleEggs,HU,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,495.1000000014901,audio-button-response,30,121769,0.0-0.0-7.0-1.0,NA,resource/audio/SeaTurtles_speaker1US.mp3,0,NA,speaker1US,SeaTurtles,US,NA
+data_2025-02-18-22-50-13_twdoi4z3r6,NA,2302.10000000149,html-keyboard-response,31,125087,0.0-0.0-8.0,NA,All done! Press the space button before exiting this window!,NA,NA,NA,NA,NA,32
